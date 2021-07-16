@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+    body{
+        background-color: beige;
+    }
+    .btn{
+        background-color: aqua;
+        transition: all 3s;
+    }
+    .container {
+            width: 98vw;
+        }
+
+        .form-group {
+            display: flex;
+            flex-direction: column;
+            padding: 10px;
+            justify-content: space-evenly;
+        }
+
+        .form-group input {
+            width: 50%;
+            padding: 10px;
+            margin: 10px 0;
+        }
+
+        .main-body2 input[type="button"] {
+            width: 80px;
+        }
+
+        textarea {
+            width: 51%;
+            padding: 3px;
+        }
+        .bg-dark{
+            background-color: black;
+            color: antiquewhite;
+        }
+        .error{
+            background-color: #01023f;
+            padding: 3px;
+            color: white;
+            width: 50vw;
+        }
+        #btn_{
+            padding: 10px;
+            background-color: #06bd06;
+            color: black;
+            float: right;
+        }
+
+    </style>
+</head>
+
+<body>
+    
+    <button  id="btn_">Change color</button>
+    <h1>Heading</h1>
+    
+    <form class="form-group">
+        <div class="msg"> </div>
+        <div>
+            <label for="name">Name:</label>
+            <input type="text" id="name" placeholder="Enter your name">
+        </div>
+        <div>
+            <label for="email">Email:</label>
+            <input type="email" id="email" placeholder="Enter your email">
+        </div>
+
+        <input class="btn1"  type="submit" style="width: 160px;" value="SEND">
+
+    </form>
+    <ul class="ul_display"></ul>
+    <script type="text/javascript" src="Event_Listeners.js"></script>
+</body>
+
+</html>

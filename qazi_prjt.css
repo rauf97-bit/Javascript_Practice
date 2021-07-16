@@ -1,0 +1,96 @@
+*{
+    box-sizing: border-box;
+}
+html, body{
+    box-sizing: border-box;
+}
+.container{
+    width: 70vw;
+    border: 2px solid #010241;
+    margin: 0 auto;
+    text-align: center;
+}
+.segment {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    border: 1px solid black;
+}
+#imageDisplay img{
+    width: 280px;
+    height: 400px;
+    margin: 10px;
+    box-shadow: 0 4px 8px 0 gray,  0 6px 20px 0 gray;
+}
+
+#imageDisplay img:hover{
+    border:2px solid #010241;
+    transition: ease-in-out 3s;
+}
+#imageDisplay{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.btnz, #image_show, .scoretable {
+    display: flex;
+    padding: 10px;
+    justify-content: space-around;
+    border: 1px solid black;
+    align-items: center;
+}
+.btn{
+    padding: 20px;
+    border-radius: 6px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2),  0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.btn_blue, .btn_reset{
+    background-color: blue;
+}
+.btn_green{
+    background-color: lime;
+}
+.btn_red{
+    background-color: red;
+}
+.btn_yellow{
+    background-color: yellow;
+}
+.blackjack {
+    display: flex;
+    flex-direction: column;
+}
+.blackjack_btns{
+    padding: 10px;
+    background-image: radial-gradient(white 5%, black 5%, #6f3474 60%);
+    color: white;
+    border: 1px solid black;
+
+}
+.blk_btns{
+    display: flex;
+    margin: 0 auto;
+    width: max-content;
+    border: 1px solid black;
+    justify-content: center;
+    }
+
+.scoreboard{
+    display: flex;
+    justify-content: space-around;
+    min-height: 350px;
+    background-image: radial-gradient(black 5%, black 15%, #6f3474 60%);
+    flex: 1;
+    color: white;
+}
+.my_score, .bot_score{
+    border: 1px solid black;
+    width: 100%;
+}
+table, th, td{
+    border: 1px solid black;
+    border-collapse: collapse;
+    padding: 10px;
+}

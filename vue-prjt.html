@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="vue-prjt.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <section class="prjt-1">
+        <button  onclick="darkMode()" class="btn">Dark Mode</button>
+        <div class="toggle">
+            JAVASCRIPT
+        </div>    
+    </section>
+    <section class="prjt-2">
+        <button  onclick="displayFull()" class="btn">Fullscreen</button>
+        <button  onclick="replaceBtn()" class="btn">Replace</button>
+        <img id="enlarge" src="/Images/080.jpg" alt="">
+    </section>
+    <section class="prjt-3">
+        <div id="text-flex" class="white">
+            <p>
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quasi, beatae. Laborum dolorem sint molestias incidunt fugiat dolores, modi sunt voluptate minus! Modi voluptas voluptatem eaque mollitia debitis magni ab nisi nam ut sint, repellat molestiae. Neque possimus impedit consectetur minima totam quis doloribus dolorem at! Odio perferendis voluptatibus aliquid veritatis.
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quasi, beatae. Laborum dolorem sint molestias incidunt fugiat dolores, modi sunt voluptate minus! Modi voluptas voluptatem eaque mollitia debitis magni ab nisi nam ut sint, repellat molestiae. Neque possimus impedit consectetur minima totam quis doloribus dolorem at! Odio perferendis voluptatibus aliquid veritatis.
+            </p>
+            <i onclick=" this.parentElement.style.display = 'none' " class="icon">&ZHcy;</i>
+        </div>
+
+        <div class="btn-flex">
+            <button  onclick="displayWhite()" style="background-color: white;" class="btn">White</button>
+            <button  onclick="displayRed()" style="background-color: red;" class="btn">Red</button>
+            <button  onclick="displayBlue()" style="background-color: lightblue;" class="btn">Blue</button>
+            <button  onclick="displayYellow()" style="background-color: yellowgreen;" class="btn">Yellow</button>
+        </div>
+    </section>
+    
+    <section>
+        <div class="range-cont">
+            <input type="range" min="20" max="30" id="rangeNum">
+            <p>Result <b id="result"></b></p>
+        </div>
+    </section>
+
+    <section style="height: 100vh;background: linear-gradient( orangered, orange);">
+        <h1 style="font-size: 40px; text-align: center; color: orange;">Birthday Countdown</h1>
+        <audio controls>
+            <source src="/sample.mp3">
+        </audio>
+        
+        <div class="bday">
+            <div class="time">
+                <h3 class="bday-text" id="days">A</h3>
+                <h4>Days</h4>
+            </div>
+            <div class="time">
+                <h3 class="bday-text" id="hours">B</h3>
+                <h4>Hours</h4>
+            </div>
+            <div class="time">
+                <h3 class="bday-text" id="minutes">C</h3>
+                <h4>Minutes</h4>
+            </div>
+            <div class="time">
+                <h3 class="bday-text" id="seconds">D</h3>
+                <h4>Seconds</h4>
+            </div>
+
+        </div>
+    </section>
+    <script src="vue-prjt.js"></script>
+</body>
+</html>

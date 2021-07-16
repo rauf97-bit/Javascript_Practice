@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="qazi_prjt.css">
+</head>
+
+<body>
+
+    <div class="container">
+        <section class="segments">
+            <h1>HOW TO GENERATE THE AGE OF A PERSON</h1>
+            <div class="btnz">
+                <button onclick="getAge()" class="btn btn_green">Click me</button>
+                <button onclick="resetAge()" class="btn btn_blue">Reset</button>
+            </div>
+            <h1 id="ageDisplay"></h1>
+        </section>
+
+    </div>
+
+    <div class="container">
+        <section class="segments">
+            <h1>HOW TO GENERATE AN IMAGE</h1>
+            <div class="btnz">
+                <button onclick="generateImage()" class="btn btn_green">Generate Image</button>
+            </div>
+            <div id="imageDisplay">
+
+            </div>
+        </section>
+
+    </div>
+
+    <div class="container">
+        <section class="segments">
+            <h1>ROCK PAPER SCISSORS GAME</h1>
+            <hr style="border: 1px solid black">
+            <div id="imageDisplay">
+                <img id="rock" src="/Images/13.jpg" alt="Messi" onclick="rpsFxn(this)"
+                    style="height: 250px; width: 250px">
+                <img id="paper" src="/Images/9y.jpg" alt="Messi" onclick="rpsFxn(this)"
+                    style="height: 250px; width: 250px">
+                <img id="scissors" src="/Images/45g.jpg" alt="Messi" onclick="rpsFxn(this)"
+                    style="height: 250px; width: 250px">
+            </div>
+
+            <div id="image_show">
+
+            </div>
+        </section>
+
+    </div>
+
+
+    <div class="container">
+        <section class="segments">
+            <h1>BUTTON COLOR CHANGER CHALLENGE </h1>
+
+            <div class="btnz">
+                <form action="">
+                    <select name="selectColor" id="colorSelector" onchange="btnColorChanger(this)">
+                        <option value="random">Random</option>
+                        <option value="red">Red</option>
+                        <option value="yellow">Yellow</option>
+                        <option value="green">Green</option>
+                        <option value="reset">Reset</option>
+                    </select>
+                </form>
+
+                <button class="btn btn_red">Red</button>
+                <button class="btn btn_yellow">Yellow</button>
+                <button class="btn btn_green">Green</button>
+                <button class="btn btn_reset">Reset</button>
+            </div>
+
+        </section>
+    </div>
+
+    <div class="container">
+        <section class="blackjack">
+            <div class="btnz">
+                <h1>BLACKJACK GAME CHALLENGE</h1>
+            </div>
+            <span class="game_stats" style="font-size: 22px; padding: 20px;">Let's Play</span>
+        </section>
+        <div class="scoreboard">
+            <div class="my_score">
+                <h2>Your Score <span class='scoreSpan' id="my_score">0</span></h2>
+            </div>
+            <div class="bot_score">
+                <h2>Bot Score <span class='scoreSpan' id="bot_score">0</span></h2>
+            </div>
+        </div>
+        <div class="blackjack_btns">
+            <div class="blk_btns">
+                <button id="hit_btn" style="margin: 10px" class="btn btn_reset">Hit</button>
+                <button id="stand_btn" style="margin: 10px" class="btn btn_yellow">Stand</button>
+                <button id="deal_btn" style="margin: 10px" class="btn btn_red">Deal</button>
+            </div>
+        </div>
+        <table class="scoretable">
+            <tr>
+                <th>Wins</th>
+                <th>Losses</th>
+                <th>Draws</th>
+            </tr>
+            <tr>
+                <td><span id='myWins'>0</span></td>
+                <td><span id='myLosses'>0</span></td>
+                <td><span id='myDraws'>0</span></td>
+            </tr>
+        </table>
+    </div>
+
+    
+
+    <script src="qazi_prjt.js"></script>
+</body>
+
+</html>

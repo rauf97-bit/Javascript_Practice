@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+        integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <link rel="stylesheet" href="form_practice.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <section class="first">
+        <header>
+            <div class="searchbox">
+                <label for="search">Search</label>
+                <input type="search" name="search" id="search" placeholder="&telrec;">
+            </div>
+            <h2>A Simple Form</h2>
+        </header>
+        <form action="#" class="example">
+            <div class="name-det">
+                <h4>Basic Info</h4>
+                <div class="inputs">
+                    <label for="fName"> Firstname</label>
+                    <input type="text" required placeholder="Firstname" class="text_">
+                    <i class="fa fa-user icon"></i>
+                </div>
+                <div class="inputs">
+                    <label for="lName"> Lastname</label>
+                    <input type="text" placeholder="Lastname" class="text_">
+                    <i class="fa fa-user icon"></i>
+                </div>
+                <div class="inputs">
+                    <label for="email">Email</label>
+                    <input type="email" required placeholder="email" class="text_">
+                    <i class="fa fa-envelope"></i>
+                </div>
+            </div>
+            <div>
+                <button class="otp">Send Confirmation Code</button>
+                <input class="otp_" type="text" required placeholder="Code">
+                <button type="submit">Submit</button>
+            </div>
+            <div class="inputs">
+                <h4 style="margin: 3px auto ;">Gender</h4>
+                <div class="gender">
+                    <input type="radio" name="gender" id="b1" class="radio">
+                    <label for="b1">Male</label>
+                    <input type="radio" name="gender" class="radio" id="b2">
+                    <label for="b2">Female</label>
+                </div>
+            </div>
+            <div class="skul_info">
+                <h4>Which School did you attend?</h4>
+                <div id="tertiary">
+                    <select name="schools">
+                        <option value="">SCHOOL</option>
+                        <option value="">ATBU</option>
+                        <option value="">ABU</option>
+                        <option value="">FUTY</option>
+                        <option value="">UNIMAID</option>
+                        <option value="">GSU</option>
+                    </select>
+                    <select name="level">
+                        <option value="">LEVEL</option>
+                        <option value="">100L</option>
+                        <option value="">200L</option>
+                        <option value="">300L</option>
+                        <option value="">400L</option>
+                        <option value="">500L</option>
+                    </select>
+                </div>
+            </div>
+            <div class="about">
+                <h4>Why do you want to join us at RF tech?</h4>
+                <textarea name="textarea" id="" cols="30" rows="10"></textarea>
+            </div>
+
+            <input type="submit" value="SUBMIT">
+
+            <h4 style="margin: 0;">Already have an Account?</h4>
+            <p style="text-align: center;">Sign-in | | <a href="#">here</a></p>
+        </form>
+    </section>
+    <section class="second">
+        <h2>Contact Us</h2>
+        <form class="form2" action="#">
+            <div class="contact">
+                <div class="inputs">
+                    <label for="email"> Email</label>
+                    <div class="yep">
+                        <input name="email" type="email" required placeholder="Insert Valid Email" class="text_">
+                        <i class="fa fa-envelope"></i>
+                    </div>
+
+                </div>
+                <div class="inputs">
+                    <label for="tel"> Telephone</label>
+                    <div class="yep">
+                        <input name="tel" type="tel" required placeholder="Insert Valid Phonenumber" class="text_">
+                        <i class="fa fa-envelope"></i>
+                    </div>
+                </div>
+            </div>
+            <fieldset>
+                <legend>How do you rate you experience?</legend>
+                <input type="radio" id="rate_1" name="rate">
+                <label for="rate_1">5-star</label> <br>
+                <input type="radio" id="rate_2" name="rate">
+                <label for="rate_2">4-star</label><br>
+                <input type="radio" id="rate_3" name="rate">
+                <label for="rate_3">3-star</label><br>
+                <input type="radio" id="rate_4" name="rate">
+                <label for="rate_4">2-star</label><br>
+            </fieldset>
+
+            <div class="last_">
+                <textarea name="text_1" id="" cols="10" rows="5" placeholder="Add Comment"></textarea>
+                <input type="submit" value="SUBMIT">
+            </div>
+        </form>
+    </section>
+
+    <section>
+        <form action="#" class="form3">
+            <div class="main-det">
+                <input type="text" placeholder="Enter your name">
+                <input type="email" placeholder="Enter Valid Email">
+                <input type="tel" placeholder="Enter Phone Digits">
+                <input type="text" placeholder="Message">
+            </div>
+            <div class="conclusion">
+                <textarea name="Mssg" id="msg" cols="30" rows="10"
+                    placeholder="Add additional specification..."></textarea>
+                <input type="submit" id="third" value="SEND">
+            </div>
+        </form>
+    </section>
+
+    <section>
+        <h2 class="bradius">Registration Form</h2>
+        <form action="#" class="form4">
+            <div class="form-cont">
+                <div class="names">
+                    <label>Name</label>
+                    <div class="namelist">
+                        <div class="firstN">
+                            <input type="text" name="" id="">
+                            <label for="">Firstname</label>
+                        </div>
+                        <div class="lastN">
+                            <input type="text" name="" id="">
+                            <label for="">Lastname</label>
+                        </div>
+                    </div>
+                </div>
+                <div class="company">
+                    <label>Company</label>
+                    <input type="text" name="" id="">
+                </div>
+                <div class="emailz">
+                    <label>Email</label>
+                    <input type="email" name="" id="">
+                </div>
+                <div class="digits">
+                    <label>Phone</label>
+                    <div class="again">
+                        <input type="tel" name="" id="">
+                        <input type="tel" name="" id="">
+                    </div>
+                </div>
+                <div class="subject">
+                    <label>Subject</label>
+                    <select name="subject" id="s1">
+                        <option disabled="disabled" selected="selected">--Choose Course</option>
+                        <option value="">HTML</option>
+                        <option value="">CSS</option>
+                        <option value="">SCSS</option>
+                        <option value="">JAVA</option>
+                    </select>
+                </div>
+                <div class="question">
+                    <h3>Are you a beginner?</h3>
+                    <div>
+                        <input type="radio" name="r1" id="y1">
+                        <label for="y1">Yes</label>
+
+                        <input type="radio" name="r1" id="n1">
+                        <label for="n1">No</label>
+                    </div>
+                </div>
+                <div class="endline">
+                    <input type="submit" name="" placeholder="Register">
+                </div>
+            </div>
+        </form>
+    </section>
+    <footer>
+        <h4>An April 2021 copyrigth&copy; Courtesy of RF&ofcir;. </h4>
+    </footer>
+</body>
+
+</html>

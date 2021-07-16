@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        @import url("https://fonts.googleapis.com/css?family=Poppins:200i,400&display=swap");
+
+        body {
+            padding: 0;
+            margin: 0;
+            background-color: #faf8f8;
+            font-family: "poppins";
+            font-size: 32px;
+            -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+            background: #4d982aa2;
+        }
+
+        h1 {
+            font-weight: 600;
+            font-size: 40px;
+            line-height: 60px;
+            /* padding-bottom: 70px; */
+        }
+
+        .form {
+            display: block;
+            background: white;
+            margin: 20px auto;
+            border-radius: 20px;
+            width: 40vw;
+            /* max-width: 730px; */
+            /* max-height: 1364px; */
+            /* left: 355px;
+  top: 62px; */
+            padding: 20px 100px;
+            -webkit-filter: drop-shadow(0px 20px 40px rgba(76, 152, 42, 0.12));
+            filter: drop-shadow(0px 20px 40px rgba(76, 152, 42, 0.12));
+            box-shadow: 2px 1px 6px gainsboro;
+        }
+
+        .form input {
+            border: 1px solid #4c982a;
+            -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+            border-radius: 12px;
+            width: 100%;
+            line-height: 48px;
+            padding: 10px;
+            margin: 0 0 20px 0;
+            font-size: 32px;
+            font-weight: 500;
+        }
+
+        .form .submit {
+            background: #05911d;
+            color: white;
+            border-radius: 15px;
+            width: 100%;
+            border: none;
+            margin: 80px 0 30px;
+            padding: 20px;
+            font-size: 35px;
+        }
+
+        .form label {
+            font-size: 1.5rem;
+        }
+
+        .gender {
+            padding: 0 50px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .form input[type="radio"] {
+            margin-top: 15px;
+        }
+
+        body>div>form>label:nth-child(10) {
+            text-align: center;
+            position: relative;
+            left: 40%;
+        }
+
+        @media (max-width: 628px) {
+            .form {
+                width: 80vw;
+                padding: 20px 40px;
+            }
+
+            h1 {
+                font-size: 35px;
+            }
+
+            .form label {
+                font-size: 1.2rem;
+            }
+
+            .form button {
+                width: 90%;
+                margin-left: 5%;
+                margin-top: 20px;
+            }
+        }
+
+        @media (max-width: 528px) {
+            .form {
+                padding: 10px 15px;
+            }
+
+            .form input {
+                padding: 5px;
+                font-size: 1rem;
+                margin: 0;
+            }
+
+            h1 {
+                font-size: 30px;
+            }
+
+            .form label {
+                font-size: 1rem;
+            }
+
+            .form .submit {
+                padding: 10px;
+                width: 70%;
+                margin-top: 10px;
+                margin-left: 15%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="form">
+        <form class="personal-info">
+
+            <h1>Personal Info</h1>
+            <label for="Full name">Full name</label>
+            <input type="text" id="name" required placeholder="">
+
+            <label for="Date of birth">Date of birth</label>
+            <input type="text" id="dob" required placeholder="dd/mm/yy">
+
+            <label for="State of origin">State of origin</label>
+            <input type="text" id="sog" required placeholder="">
+
+            <label for="Address">Address</label>
+            <input type="text" id="addr" required placeholder="">
+            <label style="font-weight: 600;">Gender</label>
+            <div class="gender">
+                <input type="radio" class="gender" required name="gender" id="male">
+                <label for="male">Male</label>
+                <input type="radio" class="gender" required name="gender" id="female">
+                <label for="female">Female</label>
+                <input type="radio" class="gender" required name="gender" id="others">
+                <label for="others">Others</label>
+            </div>
+
+            <input type="submit" class="submit" value="Continue">
+            <!-- <button class="submit">
+                <a style="text-decoration: none; color: inherit;" href="../dashboard/dashboard.html">Continue</a>
+            </button> -->
+        </form>
+
+    </div>
+
+    <script src="">
+        const fName = document.getElementById("name");
+
+        const personalForm = document.querySelector(".personal-info");
+
+        personalForm.addEventListener("submit", (e) => {
+            //   e.preventDefault();
+
+            var genderType;
+            var fullName;
+            function getGender() {
+                let type;
+                const gender = document.querySelectorAll(".gender");
+                gender.forEach((element) => {
+                    if (element.checked) {
+                        type = element.id;
+                    }
+                });
+                return type;
+            }
+            genderType = getGender();
+
+            function fname1() {
+                let fname2 = fName.value;
+                return fname2;
+            }
+            fullName = fname1();
+
+            console.log(fullName, genderType);
+        });
+
+        export { fullName, genderType };
+
+    </script>
+</body>
+
+</html>

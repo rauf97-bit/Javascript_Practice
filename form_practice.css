@@ -1,0 +1,304 @@
+*{
+    box-sizing: border-box;    
+}
+body{
+    margin: 0;
+    padding: 0;
+    background-image: url("/Images/wxc.jpg");
+    background-position: center;
+}
+.searchbox{
+    display: grid;
+    grid-template-columns: auto auto;
+    justify-content: end;
+    gap: 5px;
+    padding: 10px;
+    align-items: center;
+}
+input[type="search"]{
+    padding: 6px;
+}
+.searchbox label{
+    display: inline;
+}
+
+form.example{
+    height: 100%;
+    width: 50%;
+    margin: 20px auto;
+    display: flex;
+    flex-direction: column;
+    background-color: rgba(255, 248, 220, 0.768); 
+    padding: 10px 40px;
+}
+
+.name-det h4{
+    font-size: 30px;
+    text-align: center;
+    margin: 0 auto;
+}
+.inputs{
+
+}
+.name-det .inputs label{
+    display: block;
+}
+
+input[type="text"], input[type="email"], input[type="tel"]{
+    padding: 10px;
+    width: 93%;
+    margin: 8px 0;
+    background-color: cornsilk;
+    border-radius: 3px;
+    border: 0;
+    border-bottom: 1px solid black;
+}
+button.otp{
+    padding: 8px;
+    width: 60%;
+    margin: 8px auto;
+    display: grid;
+    align-self: center;
+    background-color: rgb(250, 224, 118);
+    border-radius: 6px;
+}
+input.otp_{
+    width: 50%;
+    padding: 13px;
+    margin: 0 auto;
+    display: block;
+    text-align: center ;
+}
+button[type="submit"], input[type="submit"] {
+    padding: 13px 20px;
+    border-radius: 5px;
+    margin: 5px auto;
+    background-color: aquamarine;
+    display: grid;
+    align-self: center;
+}
+h4{
+ text-align: center;
+}
+h2{
+    margin-top: 0;
+    font-size: 40px;
+    text-align: center;
+    font-family: algerian;
+}
+.gender{
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+input[type="radio"]{
+    margin:auto 20px;
+}
+.gender label{
+    margin: 3px auto;
+}
+.gender h4{
+    margin: 0;
+    padding: 0;
+}
+#tertiary{
+    margin: 0 auto;
+    width: max-content;
+}
+select{
+    padding: 6px;
+    background-color: rgb(250, 224, 118);
+    border-radius: 4px;
+}
+
+textarea{
+    margin: 0 auto;
+    border-radius: 4px; 
+    width: 60%;
+    display: grid;
+    align-self: center;
+    margin-bottom: 4px;
+}
+
+a{
+    text-decoration: none;
+    
+}
+a:hover{
+    text-decoration: underline;
+}
+footer{
+    text-align: center;
+    padding: 2px;
+    color: white;
+    background-color: black;
+}
+
+@media(max-width: 820px){
+    form.example{
+        width: 98%;
+    }
+    h2{font-size: 25px;}   
+    .name-det h4{font-size: 22px;}
+    input[type="text"], input[type="email"]{
+        width: 88%;
+    }
+    form.form3{
+        grid-template-columns: 1fr;
+        width: 98%;
+    }   
+    form.form2 .last_{
+        width: 80%;
+    }
+    form.form2 textarea,  form.form2 fieldset, form.form2 .inputs{
+        width: 80%;
+    }
+    
+
+}
+form.contact{
+    display: flex;
+    flex-direction: column;
+    margin: 20px auto;
+}
+.yep{
+    display: grid;
+    grid-template-columns: auto auto;
+    align-items: center;
+}
+.contact label{
+    display: block;
+}
+.yep i{
+    position: relative;
+    right: 25px;
+
+}
+fieldset{
+    padding: 30px;
+    width: 60%;
+    margin: 10px auto;
+}
+legend{
+    padding: 10px;
+    background-color: cornsilk;
+}
+div.inputs{
+    display: grid;
+    grid-template-columns: 1fr 10fr;
+    justify-content: center;
+    align-items: center;
+    width: 60%;
+    margin: 0 auto;
+}
+.form2 input[type="email"], .form2 input[type="tel"]{
+    width: 100%;
+}
+.form2 .last_{
+    width: 60%;
+    margin: auto;
+}
+.form2 textarea{
+    width: 70%;
+    background-color: cornsilk;
+    margin-left: 0;
+}
+.form2 input[type="submit"]{
+    margin-bottom: 3px;
+    margin-left: 0;
+}
+.form3{
+    width: 60%;
+    padding: 40px;
+    height: auto;
+    background-color: rgba(255, 248, 220, 0.671);
+    margin: 20px auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 15px;
+    
+}
+.form3 input[type="text"], .form3 input[type="email"],.form3 input[type="tel"] {
+    width: 100%;
+    background-color: rgba(255, 248, 220, 0.671);
+    margin-bottom: 10px;
+}
+.form3 textarea{
+    background-color: rgba(255, 248, 220, 0.671);
+    width: 100%;
+    margin-top: 6px;
+    height: 87%;
+}
+
+.bradius{
+    background-color: cornsilk;
+    width: 80%;
+    margin: auto;
+    padding: 10px;
+    border-radius: 15px 15px 0 0;
+
+}
+
+.form4{
+    width: 80%;
+    margin: auto;
+    background-color: rgba(255, 248, 220, 0.671);
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 0 0 15px 15px;
+}
+.form-cont{
+    display: flex;
+    flex-direction: column;
+}
+.names{
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    margin-bottom: 10px;
+}
+.form4 label{
+    margin-top: 8px;
+    font-size: 20px;
+}
+.namelist{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    
+}
+.company{
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    margin-bottom: 20px;
+}
+.company input[type="text"], .emailz input[type="email"],.digits input[type="tel"]{
+    width: 97%;
+}
+.emailz{
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    margin-bottom: 20px;
+}
+.digits{
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    margin-bottom: 20px;
+}
+.again{
+    display: grid;
+    grid-template-columns: 1fr 10fr;
+    gap: 8px;
+    ;
+}
+.subject{
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+}
+.form4 select{
+    width: 30%;
+}
+.question{
+    margin: 10px auto;
+    padding: 14px;
+}

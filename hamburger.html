@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /*         body {
+            background-image: url("Images/wx.jpg");
+            background-size: cover;
+            margin: 0;
+        }
+
+        nav {
+            position: fixed;
+            background-color: white;
+            height: 100vh;
+            margin-top: 0;
+            padding: 0 40px 0 30px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            transform: translateX(-100%);
+            transition: transform 0.5s ease-in;
+        }
+
+        .active {
+            transform: translateX(0%);
+        }
+
+        .active .tick {
+            display: none;
+        }
+
+        .active .cross {
+            display: block;
+        }
+
+        .tick {
+            display: block;
+        }
+
+        .cross {
+            display: none;
+        }
+
+        .toggle {
+            position: absolute;
+            top: 0;
+            right: 0;
+            transform: translateX(100%);
+        }
+
+        .toggle i {
+            padding: 10px 20px;
+        }
+
+        nav ul {
+            list-style: none;
+        }
+
+        nav ul li {
+            padding: 10px;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: black;
+            transition: all ease-in-out 0.3s;
+            font-size: 30px;
+        }
+
+        nav a:hover {
+            color: chocolate;
+            border-bottom: 1px solid black;
+        } */
+        body {
+            background-image: url("Images/wx.jpg");
+            background-size: cover;
+            margin: 0;
+        }
+
+        nav {
+            padding: 10px 20px;
+            background-color: #f1f2f1;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        nav h2 {
+            font-size: 2rem;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        }
+
+        nav ul.nav-list {
+            list-style: none;
+            display: flex;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: black;
+            padding: 2px;
+            font-size: 1.2rem;
+            margin: 0 5px;
+            transition: all 0.3s ease-in;
+        }
+
+        nav a:hover {
+            color: blue;
+            font-size: 1.6rem;
+            border-bottom: 1px solid blue;
+        }
+
+        .btn {
+            padding: 16px 27px;
+            display: none;
+        }
+
+        .active {
+            transform: translateY(0%);
+        }
+
+        @media (max-width: 660px) {
+            .btn {
+                display: block;
+            }
+
+            nav ul {
+                position: absolute;
+                text-align: center;
+                width: 60vw;
+                height: 30vh;
+                top: 20%;
+                right: 20%;
+                flex-direction: column;
+                justify-content: space-around;
+                background-color: #f1f8f9;
+                transition: transform 0.5s ease-in;
+                transform: translateY(-200%);
+            }
+
+        }
+    </style>
+</head>
+
+<body>
+    <!-- <nav class="nav-list">
+        <button class="toggle" id="toggle">
+            <i class="tick"> &checkmark; </i>
+            <i class="cross"> &chi; </i>
+        </button>
+        <ul class="ul-items">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Contact</a></li>
+            <li><a href="#">Docs</a></li>
+            <li><a href="#">Features</a></li>
+        </ul>
+    </nav> -->
+    <nav>
+        <h2>
+            Emar NavBar
+        </h2>
+        <button class="btn">
+            &thickapprox;
+        </button>
+        <ul class="nav-list">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Contact</a></li>
+            <li><a href="#">Docs</a></li>
+        </ul>
+    </nav>
+
+    <script>
+        /* let toggle = document.getElementById('toggle');
+        let navList = document.querySelector('nav');
+
+        toggle.addEventListener('click', () => {
+            navList.classList.toggle('active');
+        }) */
+        let toggle = document.querySelector('.btn');
+        let navList = document.querySelector('nav ul.nav-list');
+        toggle.addEventListener('click', () => {
+            console.log(navList);
+            navList.classList.toggle('active')
+
+        })
+    </script>
+</body>
+
+</html>

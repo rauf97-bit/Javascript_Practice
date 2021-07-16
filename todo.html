@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="todo.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+        integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <title>Document</title>
+</head>
+
+<body>
+    <header>
+        <h2>Sample To-Do's List</h2>
+    </header>
+    <main class="wrapper">
+        <div class="add-todo">
+            <form action="#" class="form-grp">
+                <div class="main-todo">
+                    
+                <input type="text" class="todoInput">
+
+                <button class="todo-btn" type="submit">
+                    <i class="fa fa-user icon"></i>
+                </button>
+
+                <select class="picker" name="subject" id="select-task">
+                    <option disabled="disabled"  selected="selected">Task-Update</option>
+                    <option value="all">All</option>
+                    <option value="completed">Completed</option>
+                    <option value="uncompleted">Uncompleted</option>
+                    
+                </select>
+                </div>
+
+                <div class="todo-container">
+                    <ul class="todo-items">
+                        
+                    </ul>
+                </div>
+
+            </form>
+
+        </div>
+    </main>
+    <script src="todo.js"></script>
+</body>
+
+</html>
