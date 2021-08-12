@@ -21,12 +21,12 @@ function getList(event) {
 
   let deleteBtn = document.createElement("button");
   deleteBtn.classList.add("delete-btn");
-  deleteBtn.innerHTML = '<i class="fa fa-envelope"></i>';
+  deleteBtn.innerHTML = '<i class="fa fa-times" aria-hidden="true"></i>';
   todoDiv.appendChild(deleteBtn);
 
   let checkBtn = document.createElement("button");
   checkBtn.classList.add("check-btn");
-  checkBtn.innerHTML = '<i class="fa fa-user icon"></i>';
+  checkBtn.innerHTML = '<i class="fa fa-check-square" aria-hidden="true"></i>';
   todoDiv.appendChild(checkBtn);
 
   todoItems.appendChild(todoDiv);
